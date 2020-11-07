@@ -1,0 +1,29 @@
+#####################################################
+|exerciseiconO__| Exercici 00_05. Quadrat a l'inrevés
+#####################################################
+
+.. rubric:: Context
+
+* Carpeta de lliurament: ``00_05_tortuga_quadrat_invertit/``
+
+* Continguts relacionats: :doc:`la_tortuga`
+
+* Com lliurar-lo: :ref:`instruccions <instruccions_git>`
+
+* [☼] Exercici :ref:`optatiu<descripcio_exercicis_optatius>`
+
+.. rubric:: Enunciat
+
+Fes una nova versió del ``turtle_square.py`` que dibuixi el quadrat cap a la dreta en comptes de
+l'esquerra.
+
+La nova versió ha d'anar al fitxer ``turtle_square_right.py``. 
+
+Potser et resultarà còmode fer una còpia de l'original ``turtle_square.py`` i
+editar-la.
+
+.. code-block:: console
+
+    $ cp turtle_square.py turtle_square_right.py
+    $ gedit turtle_square_right.py &
+

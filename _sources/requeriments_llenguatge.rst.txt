@@ -1,0 +1,37 @@
+#########################
+Llenguatge de programació
+#########################
+
+En aquest curs farem servir el llenguatge de programació Python en la seva
+versió 3.7 o superior.
+
+No pateixis si has seguit les recomanacions del sistema operatiu, doncs
+les darreres versions de Debian/Ubuntu, ja porten instal·lada, per
+defecte, una versió acceptable de Python3.
+
+Amb versions anteriors, podries tenir alguns problemes per seguir algunes
+parts d'aquests curs. Especialment si et planteges fer servir la versió
+2.x per la que ja ni hi ha suport. 
+
+Comprova la teva versió amb les comandes:
+
+.. code-block:: console
+
+    $ python3 -V
+    Python 3.7.3
+
+El teu resultat no té perquè ser idèntic als meus. Únicament t'has
+d'assegurar que ha trobat la comanda. Altrament rebràs un missatge similar
+a:
+
+.. code-block:: console
+
+    $ python3 -V
+    bash: python3: no s'ha trobat l'ordre
+
+En cas que no tinguis Python3 instal·lat, és preferible que parlis amb el
+teu docent per veure què ha fallat.
+
+.. note:: A l'hora d'editar aquests apunts, la darrera versió de Python3
+   estava per la 3.9. Si et ve de gust probar la darrera, genial. Només
+   que et costarà una mica més de feina per instal·lar-la.
