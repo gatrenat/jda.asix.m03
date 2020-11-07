@@ -1,0 +1,23 @@
+####################################################
+|exerciseiconO__| Exercici 00_08. Espiral més grossa
+####################################################
+
+.. rubric:: Context
+
+* Carpeta de lliurament: ``00_08_tortuga_espiral_grossa/``
+
+* Continguts relacionats: :doc:`la_tortuga`
+
+* Com lliurar-lo: :ref:`instruccions <instruccions_git>`
+
+* [☼] Exercici :ref:`optatiu<descripcio_exercicis_optatius>`
+
+.. rubric:: Enunciat
+
+Modifica el codi de ``turtle_spiral.py`` de manera que l'espiral sigui més grossa.
+
+El nou fitxer es dirà ``turtle_big_spiral.py``.
+
+**Pista**: amb el codi original, el costat més llarg té 100 passes (pixels).
+Posa-hi, per exemple, 1000!
+

@@ -1,0 +1,23 @@
+################################################
+|exerciseiconO__| Exercici 00_10. Espiral pirada
+################################################
+
+.. rubric:: Context
+
+* Carpeta de lliurament: ``00_10_tortuga_espiral_pirada/``
+
+* Continguts relacionats: :doc:`la_tortuga`
+
+* Com lliurar-lo: :ref:`instruccions <instruccions_git>`
+
+* [☼] Exercici :ref:`optatiu<descripcio_exercicis_optatius>`
+
+.. rubric:: Enunciat
+
+Canvia l'angle de gir de l'espiral de ``turtle_spiral.py`` de manera que, en comptes de 90 graus,
+giri 75.
+
+El nou fitxer es dirà ``turtle_spiral_75.py``.
+
+Experimenta amb altres angles si et ve de gust.
+

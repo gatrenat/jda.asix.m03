@@ -1,0 +1,21 @@
+##################
+Llista d'exercicis
+##################
+
+Aquesta és la llista d'exercicis d'aquest tema:
+
+.. toctree::
+    :titlesonly:
+
+    exercici_00_01_similaritats_i_diferencies.rst
+    exercici_00_02_holagit.rst
+    exercici_00_03_resum_comandes.rst
+    exercici_00_04_presentemnos.rst
+    exercici_00_05_tortuga_quadrat_invertit.rst
+    exercici_00_06_tortuga_quadrat_color.rst
+    exercici_00_07_tortuga_rombe.rst
+    exercici_00_08_tortuga_espiral_grossa.rst
+    exercici_00_09_tortuga_quadrat_multicolor.rst
+    exercici_00_10_tortuga_espiral_pirada.rst
+    exercici_00_11_mes_tortugues.rst
+    exercici_00_12_repte_tortugues.rst
