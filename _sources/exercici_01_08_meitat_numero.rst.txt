@@ -1,0 +1,42 @@
+######################################################
+|exerciseicon___| Exercici 01_08. _exercici_meitatnum:
+######################################################
+
+.. rubric:: Context
+
+* Carpeta de lliurament: ``01_08_meitat_numero/``
+
+* Continguts relacionats: :doc:`instruccions_comprovacio`
+
+* Com lliurar-lo: :ref:`instruccions <instruccions_git>`
+
+.. rubric:: Enunciat
+
+===================================
+
+Desenvolupa un programa a ``01_08_meitatnum/`` que demani
+un número i escrigui la meitat del número introduït.
+
+La interacció podria ser similar al següent:
+
+.. code-block:: console
+    :emphasize-lines: 3
+
+    $ python3 meitatnum.py
+    Donam un número:
+    4
+    La meitat de 4 és 2.0
+
+Fixa't que molt probablement ens escriurà ``2.0`` en comptes de l'esperat
+``2``. Python sap que en dividir poden sortir decimals i per tant
+
+.. code-block:: python
+
+    >>> type(4/2)
+    <class 'float'>
+
+Comprova què escriu si demanem ``5`` en comptes de ``4``.
+
+Com a l'exercici anterior, comprova que passes les proves abans de pujar la
+versió al repositori remot.
+

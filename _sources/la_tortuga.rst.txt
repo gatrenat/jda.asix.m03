@@ -64,14 +64,6 @@ Exercicis
 Practiquem una mica tot modificant els programes anteriors. Per suposat, no
 esperis entendre-ho tot, simplement passa-t'ho bé!
 
-Crea una carpeta anomenada ``00_04_tortuguejant/`` per posar-hi el codi de tots
-aquests exercicis.
-
-.. code-block:: console
-
-    $ mkdir 00_04_tortuguejant
-    $ cd 00_04_tortuguejant
-
 Cada cop que tinguis resolt un dels exercicis, recorda afegir-ho al control de
 versions:
 
@@ -100,4 +92,3 @@ per cada commit**.
 |exerciseiconO__| :doc:`exercici_00_11_mes_tortugues`
 
 |exerciseiconO__| :doc:`exercici_00_12_repte_tortugues`
-

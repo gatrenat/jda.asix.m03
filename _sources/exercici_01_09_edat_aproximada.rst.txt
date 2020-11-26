@@ -1,0 +1,35 @@
+###########################################################
+|exerciseicon___| Exercici 01_09. _exercici_edataproximada:
+###########################################################
+
+.. rubric:: Context
+
+* Carpeta de lliurament: ``01_09_edat_aproximada/``
+
+* Continguts relacionats: :doc:`instruccions_comprovacio`
+
+* Com lliurar-lo: :ref:`instruccions <instruccions_git>`
+
+.. rubric:: Enunciat
+
+===============================
+
+.. {{any:2019}}
+
+Desenvolupa un programa a ``01_09_edataproximada/`` que demani el nom dels
+usuaris, l'any actual i l'any de naixement, calculi d'edat que tenen.
+
+La interacció serà:
+
+.. code-block:: console
+
+    $ python3 edataproximada.py
+    Quin és el seu nom?
+    Midori
+    Hola Midori. Quin any vas nèixer?
+    1999
+    I, a quin any som?
+    2019
+    Doncs Midori, diria que tens 20 o 21 anys
+
+

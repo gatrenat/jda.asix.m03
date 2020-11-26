@@ -1,0 +1,255 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ca" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Condicionals &mdash; Introducció a la Programació per SysAdmins 2020-21 documentació</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/moistyle.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="author" title="Quant a aquests documents" href="about.html" />
+    <link rel="index" title="Índex" href="genindex.html" />
+    <link rel="search" title="Cerca" href="search.html" />
+    <link rel="next" title="L’alternativa simple" href="condicionals_simple.html" />
+    <link rel="prev" title="Exercici 01_10. _exercici_calculadorabasica_python:" href="exercici_01_10_calculadora_basica.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Introducció a la Programació per SysAdmins
+          
+
+          
+            
+            <img src="_static/logopython.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2021
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="primeres_passes.html">Primeres passes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="instruccions.html">Instruccions</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Condicionals</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="condicionals_simple.html">L’alternativa simple</a></li>
+<li class="toctree-l2"><a class="reference internal" href="condicionals_doble.html">L’alternativa doble</a></li>
+<li class="toctree-l2"><a class="reference internal" href="condicionals_niament.html">Niament múltiple</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="apendix.html">Apèndix</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Introducció a la Programació per SysAdmins</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Condicionals</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="condicionals">
+<h1>Condicionals<a class="headerlink" href="#condicionals" title="Link permanent a aquest títol">¶</a></h1>
+<div class="section" id="exercici-1-parell-o-senar">
+<h2>Exercici 1. Parell o senar<a class="headerlink" href="#exercici-1-parell-o-senar" title="Link permanent a aquest títol">¶</a></h2>
+<p>Desenvolupa un programa que demani un número enter i retorni les paraules
+<code class="docutils literal notranslate"><span class="pre">parell</span></code> o <code class="docutils literal notranslate"><span class="pre">senar</span></code> depenent del número rebut.</p>
+<p>Per exemple, considera les següents interaccions:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> python3 parellsenar.py
+<span class="go">Introdueix un número</span>
+<span class="go">4</span>
+<span class="go">És parell</span>
+<span class="gp">$</span> python3 parellsenar.py
+<span class="go">Introdueix un número</span>
+<span class="go">5</span>
+<span class="go">És senar</span>
+</pre></div>
+</div>
+<p>Si veus que no te’n surts, no et sentis malament i continua llegint.</p>
+</div>
+<div class="section" id="instruccions-condicionals">
+<h2>Instruccions condicionals<a class="headerlink" href="#instruccions-condicionals" title="Link permanent a aquest títol">¶</a></h2>
+<p>Amb el que sabem fins ara, els nostres programes són una seqüència
+d’instruccions que s’executen de la primera a la darrera.</p>
+<p>T’imagines que els programes només poguessin fer això? Com resoldríem problemes
+com el proposat amb l’exercici anterior?</p>
+<p>Els llenguatges de programació ofereixen la possibilitat d’executar una
+instrucció o una altra depenent d’alguna condició. Aquesta funcionalitat ens
+l’ofereixen les <em>instruccions condicionals</em>.</p>
+<p>Els continguts d’aquesta secció s’estructuren en les següents entrades:</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="condicionals_simple.html">L’alternativa simple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="condicionals_doble.html">L’alternativa doble</a></li>
+<li class="toctree-l1"><a class="reference internal" href="condicionals_niament.html">Niament múltiple</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="condicionals_simple.html" class="btn btn-neutral float-right" title="L’alternativa simple" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="exercici_01_10_calculadora_basica.html" class="btn btn-neutral float-left" title="Exercici 01_10. _exercici_calculadorabasica_python:" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020-2021 Moisès Gómez Girón
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

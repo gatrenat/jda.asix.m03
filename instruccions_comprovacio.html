@@ -1,0 +1,246 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ca" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Comprovem els programes &mdash; Introducció a la Programació per SysAdmins 2020-21 documentació</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/moistyle.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="author" title="Quant a aquests documents" href="about.html" />
+    <link rel="index" title="Índex" href="genindex.html" />
+    <link rel="search" title="Cerca" href="search.html" />
+    <link rel="next" title="Llista d’exercicis" href="instruccions_exercicis.html" />
+    <link rel="prev" title="Un programa pas a pas" href="instruccions_pas_a_pas.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Introducció a la Programació per SysAdmins
+          
+
+          
+            
+            <img src="_static/logopython.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2021
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="primeres_passes.html">Primeres passes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="instruccions.html">Instruccions</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="instruccions_assignacio.html">Instruccions d’assignació</a></li>
+<li class="toctree-l2"><a class="reference internal" href="instruccions_es.html">Entrada/Sortida</a></li>
+<li class="toctree-l2"><a class="reference internal" href="instruccions_pas_a_pas.html">Un programa pas a pas</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Comprovem els programes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="instruccions_exercicis.html">Llista d’exercicis</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="condicionals.html">Condicionals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apendix.html">Apèndix</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Introducció a la Programació per SysAdmins</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="instruccions.html">Instruccions</a> &raquo;</li>
+        
+      <li>Comprovem els programes</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="comprovem-els-programes">
+<h1>Comprovem els programes<a class="headerlink" href="#comprovem-els-programes" title="Link permanent a aquest títol">¶</a></h1>
+<p>Amb una mica de pràctica podem anar agafant-li el truc a això de programar, oi?</p>
+<p>Hi ha, però, un punt que no acaba d’estar resolt. Cada cop que fem un programa,
+l’hem de provar. És una part més o menys mecànica i tediosa, però
+imprescindible.</p>
+<p>De moment, els programes són facilets i, per tant, les proves també.
+Bàsicament realitzes l’exemple d’execució que inclous a la capçalera i
+comproves visualment que el resultat coincideix amb l’esperat.</p>
+<p>Amb tot, imagina’t que vols tenir la certesa que el resultat és <strong>exactament</strong>
+l’esperat. És més, imagina’t que volguessis fer aquesta comprovació sense
+necessitat d’haver de mirar tu el resultat, fent que algú altre ho comprovés
+per tu: per exemple, <strong>un programa!</strong></p>
+<p>En els propers exercicis t’he inclòs un mecanisme automàtic per que puguis
+comprovar si el teu codi compleix uns mínims.</p>
+<p>Per executar aquest mecanisme, hauràs de realitzar els exercicis en la carpeta
+que se t’indiqui. Si el títol de l’exercici porta el símbol <strong>☞</strong>, voldrà dir
+que al teu repositori t’hauré afegit un test per a aquest exercici.</p>
+<p>No et perdis l’explicació de com realitzar les proves a l’enunciat del següent
+exercici.</p>
+<p><img alt="exerciseicon___" src="_images/exerciseicon___.png" /> <a class="reference internal" href="exercici_01_07_quadrat_numero.html"><span class="doc"> Exercici 01_07. _exercici_quadratnum:</span></a>
+<img alt="exerciseicon___" src="_images/exerciseicon___.png" /> <a class="reference internal" href="exercici_01_08_meitat_numero.html"><span class="doc"> Exercici 01_08. _exercici_meitatnum:</span></a>
+<img alt="exerciseicon___" src="_images/exerciseicon___.png" /> <a class="reference internal" href="exercici_01_09_edat_aproximada.html"><span class="doc"> Exercici 01_09. _exercici_edataproximada:</span></a>
+<img alt="exerciseicon___" src="_images/exerciseicon___.png" /> <a class="reference internal" href="exercici_01_10_calculadora_basica.html"><span class="doc"> Exercici 01_10. _exercici_calculadorabasica_python:</span></a></p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="instruccions_exercicis.html" class="btn btn-neutral float-right" title="Llista d’exercicis" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="instruccions_pas_a_pas.html" class="btn btn-neutral float-left" title="Un programa pas a pas" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020-2021 Moisès Gómez Girón
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
