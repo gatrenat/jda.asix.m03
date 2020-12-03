@@ -1,6 +1,6 @@
-#################################################################
-|exerciseicon___| Exercici 01_05. Exercici 5. Repetim una paraula
-#################################################################
+#####################################################
+|exerciseicon___| Exercici 01_05. Repetim una paraula
+#####################################################
 
 .. rubric:: Context
 
@@ -12,7 +12,7 @@
 
 .. rubric:: Enunciat
 
-Desenvolupa un programa dins de la carpeta ``01_05_repeteixparaula/`` que demani
+Desenvolupa un programa que demani
 a l'usuari una paraula i un número, i escrigui la paraula tants cops com digui
 el nombre.
 
@@ -45,5 +45,3 @@ La interacció podria ser similar al següent:
 
 - Recorda que ``input()`` retorna un valor de tipus *string*. Això et
   requerirà convertir-ho si et cal un número.
-
-

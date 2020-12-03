@@ -1,6 +1,6 @@
-############################################################
-|exerciseicon___| Exercici 01_04. Exercici 4. Noms i cognoms
-############################################################
+################################################
+|exerciseicon___| Exercici 01_04. Noms i cognoms
+################################################
 
 .. rubric:: Context
 
@@ -12,8 +12,7 @@
 
 .. rubric:: Enunciat
 
-Desenvolupa un programa en el fitxer anomenat ``nom_i_cognoms.py`` dins d'una
-carpeta anomenada ``01_04_nomsicognoms/``, que demani a
+Desenvolupa un programa en el fitxer anomenat ``nom_i_cognoms.py``, que demani a
 l'usuari el seu nom. Un cop obtingut, demanarà el seu cognom.  Finalment
 respondrà: ``"Ei «nom», tinc una amiga que també és «cognom»"``.
 
@@ -30,4 +29,3 @@ Per fer-ho, recorda les passes:
 
 No oblidis actualitzar el teu repositori ``git`` (incloent la versió remota) amb
 el nou exercici.
-
