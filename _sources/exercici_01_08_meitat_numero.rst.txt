@@ -1,6 +1,6 @@
-######################################################
-|exerciseicon___| Exercici 01_08. _exercici_meitatnum:
-######################################################
+#######################################################
+|exerciseicon__T| Exercici 01_08. La meitat d'un número
+#######################################################
 
 .. rubric:: Context
 
@@ -10,11 +10,12 @@
 
 * Com lliurar-lo: :ref:`instruccions <instruccions_git>`
 
+* [✓] Exercici amb :ref:`autoavaluació<descripcio_exercicis_autoavaluacio>`
+
 .. rubric:: Enunciat
 
-===================================
 
-Desenvolupa un programa a ``01_08_meitatnum/`` que demani
+Desenvolupa un programa que demani
 un número i escrigui la meitat del número introduït.
 
 La interacció podria ser similar al següent:
@@ -39,4 +40,3 @@ Comprova què escriu si demanem ``5`` en comptes de ``4``.
 
 Com a l'exercici anterior, comprova que passes les proves abans de pujar la
 versió al repositori remot.
-

@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>L’alternativa doble &mdash; Introducció a la Programació per SysAdmins 2020-21 documentació</title>
+  <title>Exercici 02_11. Tortuga semàfor &mdash; Introducció a la Programació per SysAdmins 2020-21 documentació</title>
   
 
   
@@ -39,8 +39,8 @@
     <link rel="author" title="Quant a aquests documents" href="about.html" />
     <link rel="index" title="Índex" href="genindex.html" />
     <link rel="search" title="Cerca" href="search.html" />
-    <link rel="next" title="Niament múltiple" href="condicionals_niament.html" />
-    <link rel="prev" title="L’alternativa simple" href="condicionals_simple.html" /> 
+    <link rel="next" title="Apèndix" href="apendix.html" />
+    <link rel="prev" title="Exercici 02_10. L’ascensor" href="exercici_02_10_ascensor.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -97,9 +97,22 @@
 <li class="toctree-l1"><a class="reference internal" href="instruccions.html">Instruccions</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="condicionals.html">Condicionals</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="condicionals_simple.html">L’alternativa simple</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">L’alternativa doble</a></li>
+<li class="toctree-l2"><a class="reference internal" href="condicionals_doble.html">L’alternativa doble</a></li>
 <li class="toctree-l2"><a class="reference internal" href="condicionals_niament.html">Niament múltiple</a></li>
-<li class="toctree-l2"><a class="reference internal" href="condicionals_exercicis.html">Llista d’exercicis</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="condicionals_exercicis.html">Llista d’exercicis</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="exercici_02_01_preso.html"> Exercici 02_01. Si ets adult llavors ets responsable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exercici_02_02_dosenordre.html"> Exercici 02_02. Dos en ordre</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exercici_02_03_quadratsentit.html"> Exercici 02_03. Quadrat dretà o esquerrà</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exercici_02_04_mesosianys.html"> Exercici 02_04. Mesos i anys</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exercici_02_05_tresenordre.html"> Exercici 02_05. Tres en ordre</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exercici_02_06_calculadorasenzilla.html"> Exercici 02_06. Una calculadora senzilla</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exercici_02_07_pagaments.html"> Exercici 02_07. Pagaments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exercici_02_08_semafor.html"> Exercici 02_08. La guia de semàfors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exercici_02_09_nombredefills.html"> Exercici 02_09. El nombre de fills</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exercici_02_10_ascensor.html"> Exercici 02_10. L’ascensor</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#"> Exercici 02_11. Tortuga semàfor</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="apendix.html">Apèndix</a></li>
@@ -151,7 +164,9 @@
         
           <li><a href="condicionals.html">Condicionals</a> &raquo;</li>
         
-      <li>L’alternativa doble</li>
+          <li><a href="condicionals_exercicis.html">Llista d’exercicis</a> &raquo;</li>
+        
+      <li> Exercici 02_11. Tortuga semàfor</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -168,48 +183,27 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="l-alternativa-doble">
-<h1>L’alternativa doble<a class="headerlink" href="#l-alternativa-doble" title="Link permanent a aquest títol">¶</a></h1>
-<p>«Si plou llavors treu el paraigües, sinó deixa’l a casa»</p>
-<p>Podem codificar aquesta condició de la següent manera:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">plou</span><span class="p">:</span>
-    <span class="n">treu_el_paraigues</span><span class="p">()</span>
-
-<span class="k">if</span> <span class="ow">not</span> <span class="n">plou</span><span class="p">:</span>
-    <span class="n">deixa_paraigues_a_casa</span><span class="p">()</span>
+  <div class="section" id="exerciseicon-exercici-02-11-tortuga-semafor">
+<h1><img alt="exerciseicon___" src="_images/exerciseicon___.png" /> Exercici 02_11. Tortuga semàfor<a class="headerlink" href="#exerciseicon-exercici-02-11-tortuga-semafor" title="Link permanent a aquest títol">¶</a></h1>
+<p class="rubric">Context</p>
+<ul class="simple">
+<li><p>Carpeta de lliurament: <code class="docutils literal notranslate"><span class="pre">02_11_tortugasemafor/</span></code></p></li>
+<li><p>Continguts relacionats: <a class="reference internal" href="condicionals_niament.html"><span class="doc">Niament múltiple</span></a></p></li>
+<li><p>Com lliurar-lo: <a class="reference internal" href="holagit.html#instruccions-git"><span class="std std-ref">instruccions</span></a></p></li>
+</ul>
+<p class="rubric">Enunciat</p>
+<p>Desenvolupa un programa que demani als usuaris de quin color està el semàfor.</p>
+<p>Fent servir <code class="docutils literal notranslate"><span class="pre">turtle</span></code>, dibuixa un cercle de radi 100 amb el color indicat.</p>
+<p>El programa només acceptarà els colors “verd”, “groc” i “vermell”. Per qualsevol
+altre color, ho pintarà amb negre.</p>
+<p>Vinga, que et passo el codi de com es fa el cercle vermell:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">t</span><span class="o">.</span><span class="n">fillcolor</span><span class="p">(</span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span><span class="o">.</span><span class="n">begin_fill</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span><span class="o">.</span><span class="n">end_fill</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>Si bé això funciona, resulta una mica repetitiu. Molts llenguatges, com ara el
-Python, ofereixen la possibilitat d’expressar aquest <em>sinó</em>.</p>
-<p>En diagrama de flux ho representaríem com:</p>
-<div align="center" class="align-center"><div class="graphviz"><img src="_images/graphviz-1ddf9ef4c724a83c2f7975dbb8fc17eeb85b0f03.png" alt="digraph {
-    inici[shape=&quot;box&quot;, style=rounded];
-    final[shape=&quot;box&quot;, style=rounded];
-    plou[shape=&quot;diamond&quot;, style=&quot;&quot;];
-    &quot;treu el paraigües&quot;[shape=&quot;rectangle&quot;, style=&quot;&quot;]
-    &quot;deixa'l a casa&quot;[shape=&quot;rectangle&quot;, style=&quot;&quot;]
-
-    inici-&gt; plou;
-    plou -&gt; &quot;treu el paraigües&quot;[label=&quot;cert&quot;];
-    plou -&gt; &quot;deixa'l a casa&quot;[label=&quot;fals&quot;];
-    &quot;treu el paraigües&quot; -&gt; final;
-    &quot;deixa'l a casa&quot; -&gt; final;
-}" class="graphviz" /></div>
-</div>
-<p>Fixa’t com, amb aquesta nova forma de condicional, podem especificar
-quines instruccions a executar quan s’acompleix la condició i quines quan no es
-compleix.</p>
-<p>En Python:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">plou</span><span class="p">:</span>
-   <span class="n">treu_el_paraigues</span><span class="p">()</span>
-<span class="k">else</span><span class="p">:</span>
-   <span class="n">deixa_paraigues_a_casa</span><span class="p">()</span>
-</pre></div>
-</div>
-<p><img alt="exerciseicon__T" src="_images/exerciseicon__T.png" /> <a class="reference internal" href="exercici_02_02_dosenordre.html"><span class="doc"> Exercici 02_02. Dos en ordre</span></a></p>
-<p><img alt="exerciseicon___" src="_images/exerciseicon___.png" /> <a class="reference internal" href="exercici_02_03_quadratsentit.html"><span class="doc"> Exercici 02_03. Quadrat dretà o esquerrà</span></a></p>
-<p>El resultat serà una finestra amb un dibuix d’un quadrat dibuixat amb girs cap a
-la dreta.</p>
+<img alt="_images/turtlesemafor.gif" class="align-center" src="_images/turtlesemafor.gif" />
 </div>
 
 
@@ -220,10 +214,10 @@ la dreta.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="condicionals_niament.html" class="btn btn-neutral float-right" title="Niament múltiple" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="apendix.html" class="btn btn-neutral float-right" title="Apèndix" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="condicionals_simple.html" class="btn btn-neutral float-left" title="L’alternativa simple" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="exercici_02_10_ascensor.html" class="btn btn-neutral float-left" title="Exercici 02_10. L’ascensor" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

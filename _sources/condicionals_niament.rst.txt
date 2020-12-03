@@ -48,41 +48,19 @@ En Python tenim la paraula reservada ``elif`` com a contracció de ``else-if``.
 Per cert, podem indicar tants ``elif`` com ens calguin i no és obligatori acabar
 amb un ``else``.
 
-.. _exercici_mesosianys:
 
-Exercici 5. ☞ Mesos i anys
-==========================
+|exerciseicon__T| :doc:`exercici_02_04_mesosianys`
 
-Desenvolupa un programa a ``02_05_mesosianys/`` que demani un mes i un any, i
-escrigui el mes anterior i el mes següent.
+|exerciseicon__T| :doc:`exercici_02_05_tresenordre`
 
-Exemple d'interacció:
+|exerciseicon__T| :doc:`exercici_02_06_calculadorasenzilla`
 
-.. code-block:: console
+|exerciseicon__T| :doc:`exercici_02_07_pagaments`
 
-    $ python3 mesosianys.py
-    Mes?
-    10
-    Any?
-    2003
-    Anterior 9/2003 i posterior 11/2003
+|exerciseicon__T| :doc:`exercici_02_08_semafor`
 
-.. _exercici_tresenordre:
+|exerciseicon__T| :doc:`exercici_02_09_nombredefills`
 
-Exercici 6. ☞ Tres en ordre
-===========================
+|exerciseicon_ST| :doc:`exercici_02_10_ascensor`
 
-Desenvolupa un programa a ``02_06_tresenordre/`` que demani tres números i
-escrigui els tres números ordenats creixentment (de menor a major).
-
-Exemple d'interacció: ::
-
-    $ python3 tresenordre.py
-    Primer?
-    3
-    Segon?
-    4
-    Tercer?
-    2
-    2, 3 i 4
-
+|exerciseicon___| :doc:`exercici_02_11_tortugasemafor`

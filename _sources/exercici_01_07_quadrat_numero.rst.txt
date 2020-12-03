@@ -1,6 +1,6 @@
-#######################################################
-|exerciseicon___| Exercici 01_07. _exercici_quadratnum:
-#######################################################
+########################################################
+|exerciseicon__T| Exercici 01_07. El quadrat d'un número
+########################################################
 
 .. rubric:: Context
 
@@ -10,11 +10,11 @@
 
 * Com lliurar-lo: :ref:`instruccions <instruccions_git>`
 
+* [✓] Exercici amb :ref:`autoavaluació<descripcio_exercicis_autoavaluacio>`
+
 .. rubric:: Enunciat
 
-====================================
-
-Desenvolupa un programa a ``01_07_quadratnumero/`` que demani un número i
+Desenvolupa un programa que demani un número i
 escrigui el número al quadrat.
 
 Una possible interacció:
@@ -27,11 +27,12 @@ Una possible interacció:
     4
     El quadrat de 4 és 16
 
-Per comprovar que el teu programa passa les proves, executa la següent comanda:
+Per comprovar que el teu programa passa les proves, executa la següent
+comanda dins de la carpeta de l'exercici:
 
 .. code-block:: console
 
-    $ bash test/test.sh
+    $ prgtest.sh
 
 Quan no hi ha error, el programa t'ho indicarà amb el missatge:
 
@@ -46,7 +47,7 @@ Un exemple de sortida d'error seria:
 
 .. code-block:: console
 
-    $ bash test/test.sh
+    $ prgtest.sh
     Error
     =====
     No es troba el programa quadratnum.py
@@ -75,7 +76,7 @@ Un altre exemple de sortida d'error seria:
 .. code-block:: console
     :linenos:
 
-    $ bash test/test.sh
+    $ prgtest.sh
     Test nr. 1: Error
 
     Entrada

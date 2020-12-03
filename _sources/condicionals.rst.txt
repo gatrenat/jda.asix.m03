@@ -2,8 +2,7 @@
 Condicionals
 ############
 
-Exercici 1. Parell o senar
-==========================
+Considera el següent enunciat:
 
 Desenvolupa un programa que demani un número enter i retorni les paraules
 ``parell`` o ``senar`` depenent del número rebut.
@@ -11,11 +10,13 @@ Desenvolupa un programa que demani un número enter i retorni les paraules
 Per exemple, considera les següents interaccions:
 
 .. code-block:: console
+    :emphasize-lines: 2, 4, 7, 9
 
     $ python3 parellsenar.py
     Introdueix un número
     4
     És parell
+
     $ python3 parellsenar.py
     Introdueix un número
     5
@@ -45,7 +46,4 @@ Els continguts d'aquesta secció s'estructuren en les següents entrades:
     condicionals_simple.rst
     condicionals_doble.rst
     condicionals_niament.rst
-
-..  intro_doctest.rst
-..  condicionals_juguem.rst
-
+    condicionals_exercicis.rst

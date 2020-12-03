@@ -87,31 +87,7 @@ introduir valors incorrectes (per exemple, una edat negativa)
 Si algun dels problemes et resulta complicat d'entendre, potser t'ajudarà
 dibuixar-lo amb un diagrama de flux.
 
-.. _exercici_preso:
-
-Exercici 2. ☞ Si ets adult llavors ets responsable
-==================================================
-
-Desenvolupa un programa a ``02_02_preso/`` que demani el nom i l'edat a
-l'usuari, i si és major de 18 anys li digui “Vostè ja pot anar a la presó!”.
-Finalment, sigui quina sigui l'edat de l'usuari el programa s'acomiadarà dient
-“Vagi amb compte «nom de l'usuari»!”.
-
-Exemples d'interacció: ::
-
-    $ python3 preso.py
-    Com es diu?
-    Manel
-    Quina edat té?
-    17
-    Vagi amb compte Manel
-    $ python3 preso.py
-    Com es diu?
-    Anna
-    Quina edat té?
-    19
-    Vostè ja pot anar a la presó!
-    Vagi amb compte Anna
+|exerciseicon__T| :doc:`exercici_02_01_preso`
 
 ----
 
@@ -122,4 +98,4 @@ Exemples d'interacció: ::
    normalment no es veuen, és difícil de saber si hi ha un tabulador o quatre
    (vuit, etc) espais.  Això genera tants embolics que Python3 ja no permet
    barrejar tabuladors i espais per indentar, i `recomana
-   espais <https://www.python.org/dev/peps/pep-0008/#tabs-or-spaces>`
+   espais <https://www.python.org/dev/peps/pep-0008/#tabs-or-spaces>`_

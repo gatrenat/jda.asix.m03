@@ -1,6 +1,6 @@
-###########################################################
-|exerciseicon___| Exercici 01_09. _exercici_edataproximada:
-###########################################################
+###################################################
+|exerciseicon__T| Exercici 01_09. L'edat aproximada
+###################################################
 
 .. rubric:: Context
 
@@ -10,18 +10,19 @@
 
 * Com lliurar-lo: :ref:`instruccions <instruccions_git>`
 
-.. rubric:: Enunciat
+* [✓] Exercici amb :ref:`autoavaluació<descripcio_exercicis_autoavaluacio>`
 
-===============================
+.. rubric:: Enunciat
 
 .. {{any:2019}}
 
-Desenvolupa un programa a ``01_09_edataproximada/`` que demani el nom dels
+Desenvolupa un programa que demani el nom dels
 usuaris, l'any actual i l'any de naixement, calculi d'edat que tenen.
 
 La interacció serà:
 
 .. code-block:: console
+    :emphasize-lines: 2, 4, 6, 8
 
     $ python3 edataproximada.py
     Quin és el seu nom?
@@ -31,5 +32,3 @@ La interacció serà:
     I, a quin any som?
     2019
     Doncs Midori, diria que tens 20 o 21 anys
-
-

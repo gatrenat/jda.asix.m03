@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Exercici 01_07. _exercici_quadratnum: &mdash; Introducció a la Programació per SysAdmins 2020-21 documentació</title>
+  <title>Exercici 01_07. El quadrat d’un número &mdash; Introducció a la Programació per SysAdmins 2020-21 documentació</title>
   
 
   
@@ -39,7 +39,7 @@
     <link rel="author" title="Quant a aquests documents" href="about.html" />
     <link rel="index" title="Índex" href="genindex.html" />
     <link rel="search" title="Cerca" href="search.html" />
-    <link rel="next" title="Exercici 01_08. _exercici_meitatnum:" href="exercici_01_08_meitat_numero.html" />
+    <link rel="next" title="Exercici 01_08. La meitat d’un número" href="exercici_01_08_meitat_numero.html" />
     <link rel="prev" title="Exercici 01_06. Un rectangle a mida" href="exercici_01_06_rectangle_a_mida.html" /> 
 </head>
 
@@ -106,10 +106,10 @@
 <li class="toctree-l3"><a class="reference internal" href="exercici_01_04_noms_i_cognoms.html"> Exercici 01_04. Exercici 4. Noms i cognoms</a></li>
 <li class="toctree-l3"><a class="reference internal" href="exercici_01_05_repetim_paraula.html"> Exercici 01_05. Exercici 5. Repetim una paraula</a></li>
 <li class="toctree-l3"><a class="reference internal" href="exercici_01_06_rectangle_a_mida.html"> Exercici 01_06. Un rectangle a mida</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#"> Exercici 01_07. _exercici_quadratnum:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="exercici_01_08_meitat_numero.html"> Exercici 01_08. _exercici_meitatnum:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="exercici_01_09_edat_aproximada.html"> Exercici 01_09. _exercici_edataproximada:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="exercici_01_10_calculadora_basica.html"> Exercici 01_10. _exercici_calculadorabasica_python:</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#"> Exercici 01_07. El quadrat d’un número</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exercici_01_08_meitat_numero.html"> Exercici 01_08. La meitat d’un número</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exercici_01_09_edat_aproximada.html"> Exercici 01_09. L’edat aproximada</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exercici_01_10_calculadora_basica.html"> Exercici 01_10. Una calculadora bàsica</a></li>
 </ul>
 </li>
 </ul>
@@ -166,7 +166,7 @@
         
           <li><a href="instruccions_exercicis.html">Llista d’exercicis</a> &raquo;</li>
         
-      <li> Exercici 01_07. _exercici_quadratnum:</li>
+      <li> Exercici 01_07. El quadrat d’un número</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -183,17 +183,17 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="exerciseicon-exercici-01-07-exercici-quadratnum">
-<h1><img alt="exerciseicon___" src="_images/exerciseicon___.png" /> Exercici 01_07. _exercici_quadratnum:<a class="headerlink" href="#exerciseicon-exercici-01-07-exercici-quadratnum" title="Link permanent a aquest títol">¶</a></h1>
+  <div class="section" id="exerciseicon-t-exercici-01-07-el-quadrat-d-un-numero">
+<h1><img alt="exerciseicon__T" src="_images/exerciseicon__T.png" /> Exercici 01_07. El quadrat d’un número<a class="headerlink" href="#exerciseicon-t-exercici-01-07-el-quadrat-d-un-numero" title="Link permanent a aquest títol">¶</a></h1>
 <p class="rubric">Context</p>
 <ul class="simple">
 <li><p>Carpeta de lliurament: <code class="docutils literal notranslate"><span class="pre">01_07_quadrat_numero/</span></code></p></li>
 <li><p>Continguts relacionats: <a class="reference internal" href="instruccions_comprovacio.html"><span class="doc">Comprovem els programes</span></a></p></li>
 <li><p>Com lliurar-lo: <a class="reference internal" href="holagit.html#instruccions-git"><span class="std std-ref">instruccions</span></a></p></li>
+<li><p>[✓] Exercici amb <a class="reference internal" href="sobre_exercicis.html#descripcio-exercicis-autoavaluacio"><span class="std std-ref">autoavaluació</span></a></p></li>
 </ul>
 <p class="rubric">Enunciat</p>
-<hr class="docutils" />
-<p>Desenvolupa un programa a <code class="docutils literal notranslate"><span class="pre">01_07_quadratnumero/</span></code> que demani un número i
+<p>Desenvolupa un programa que demani un número i
 escrigui el número al quadrat.</p>
 <p>Una possible interacció:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> python3 quadratnum.py
@@ -202,8 +202,9 @@ escrigui el número al quadrat.</p>
 </span><span class="go">El quadrat de 4 és 16</span>
 </pre></div>
 </div>
-<p>Per comprovar que el teu programa passa les proves, executa la següent comanda:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> bash test/test.sh
+<p>Per comprovar que el teu programa passa les proves, executa la següent
+comanda dins de la carpeta de l’exercici:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> prgtest.sh
 </pre></div>
 </div>
 <p>Quan no hi ha error, el programa t’ho indicarà amb el missatge:</p>
@@ -213,7 +214,7 @@ escrigui el número al quadrat.</p>
 <p>En cas, però que hi trobi algun error, el programa et donarà informació per que
 puguis identificar el problema i resoldre’l.</p>
 <p>Un exemple de sortida d’error seria:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> bash test/test.sh
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> prgtest.sh
 <span class="go">Error</span>
 <span class="go">=====</span>
 <span class="go">No es troba el programa quadratnum.py</span>
@@ -258,7 +259,7 @@ instruccions:</p>
 20
 21
 22
-23</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="gp">$</span> bash test/test.sh
+23</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="gp">$</span> prgtest.sh
 <span class="go">Test nr. 1: Error</span>
 
 <span class="go">Entrada</span>
@@ -321,7 +322,7 @@ repositori remot.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="exercici_01_08_meitat_numero.html" class="btn btn-neutral float-right" title="Exercici 01_08. _exercici_meitatnum:" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="exercici_01_08_meitat_numero.html" class="btn btn-neutral float-right" title="Exercici 01_08. La meitat d’un número" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="exercici_01_06_rectangle_a_mida.html" class="btn btn-neutral float-left" title="Exercici 01_06. Un rectangle a mida" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
