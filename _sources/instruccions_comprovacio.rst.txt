@@ -27,7 +27,10 @@ que al teu repositori t'hauré afegit un test per a aquest exercici.
 No et perdis l'explicació de com realitzar les proves a l'enunciat del següent
 exercici.
 
-|exerciseicon___| :doc:`exercici_01_07_quadrat_numero`
-|exerciseicon___| :doc:`exercici_01_08_meitat_numero`
-|exerciseicon___| :doc:`exercici_01_09_edat_aproximada`
-|exerciseicon___| :doc:`exercici_01_10_calculadora_basica`
+|exerciseicon__T| :doc:`exercici_01_07_quadrat_numero`
+
+|exerciseicon__T| :doc:`exercici_01_08_meitat_numero`
+
+|exerciseicon__T| :doc:`exercici_01_09_edat_aproximada`
+
+|exerciseicon__T| :doc:`exercici_01_10_calculadora_basica`
