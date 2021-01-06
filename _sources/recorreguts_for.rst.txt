@@ -1,0 +1,75 @@
+#####################
+Un nou tipus de bucle
+#####################
+
+Ara que ja sabem resoldre problemes de recorreguts amb el ``while``
+semblaria que ja hem acabat, oi? Doncs Python ens té preparada una sorpresa.
+
+Recordem el problema dels 10 nombres naturals:
+
+    Desenvolupa un programa que escrigui els primers 10 números naturals començant
+    pel zero. És a dir: 0, 1 2 3…9
+
+I recordem també la solució més immediata:
+
+.. code-block:: python
+    :linenos:
+
+    numero = 0              # variable de recorregut assignada al primer valor
+    while numero < 10:      # condició de sortida en passar del darrer valor
+        print(numero)
+        numero = numero + 1 # passem el número al següent
+
+Ara, agafa aire i fixa't una altra manera d'escriure aquest fragment de
+codi:
+
+.. code-block:: python
+    :linenos:
+
+    for numero in range(0, 10, 1):
+        print(numero)
+
+Ep! Què ha estat això?
+
+Si executem aquestes dues línies de codi, generen el mateix resultat que
+les de la versió amb ``while``!
+
+Sabent això, intentem deduir tot el que puguem per veure d'entendre-ho.
+
+És evident que hi ha elements diferents: ``for``, ``in`` i ``range()``.
+Veiem si podem deduir què fan.
+
+Hi ha, també, elements comuns a les dues versions i, de moment, no tenim
+cap raó per no suposar que desenvolupen el mateix paper a ambdues
+versions:
+
+* l'element comú més evident és ``print(numero)``. Això no ens deixa cap
+  dubte que la resta d'elements de la versió ``while`` s'està realitzant
+  dins de la línia que comença amb ``for``.
+
+  És a dir, tres línies en una sola! 
+  Això inclou la inicialització de ``numero``, la condició de sortida del
+  bucle i l'increment.
+
+* ``numero``; és la variable de recorregut també a la nova versió, si més
+  no perquè és el que mostra el ``print()``, per tant, a l'igual que a la
+  versió ``while``, en aquesta ``numero`` ha d'anar prenent els valors del
+  0 fins el 9. No sabem, però, ni on és inicialitzat, ni com va canviant
+  d'un valor al següent.
+
+* el ``0`` que apareix com a primer element dins de ``range()`` pot fer el
+  paper de la inicialització de ``numero`` dins la versió ``while``
+
+* el ``10`` que apareix com a segon element dins de ``range()`` podria fer
+  el paper del valor límit per finalitzar el bucle.
+
+* el valor ``1`` que apareix com a tercer element del ``range()`` podria
+  representar el valor d'increment de ``numero`` per passar al següent
+  element.
+
+Per comprovar si les nostres sospites són certes, podem variar els valors
+indicats i veure si els resultats són coherents. Per exemple, si canviem
+el ``0`` per un ``1``, el ``10`` per un ``11``, hauríem de trobar-nos els
+números entre 1 i 10, oi.
+
+Prova-ho!

@@ -1,0 +1,47 @@
+##########################################################
+|exerciseicon__T| Exercici 04_18. Lletres entre parèntesis
+##########################################################
+
+.. rubric:: Context
+
+* Carpeta de lliurament: ``04_18_parentitza/``
+
+* Continguts relacionats: :doc:`recorreguts_strings`
+
+* Com lliurar-lo: :ref:`instruccions <instruccions_git>`
+
+* [✓] Exercici amb :ref:`autoavaluació<descripcio_exercicis_autoavaluacio>`
+
+.. rubric:: Enunciat
+
+Desenvolupa un programa que demani un text i mostri cada lletra entre
+parèntesis
+
+Considera la següent simulació:
+
+.. code-block:: none
+    :emphasize-lines: 2, 4
+
+    $ python3 parentitza.py
+    Text?
+    I have an apple.
+    (I) (h)(a)(v)(e) (a)(n) (a)(p)(p)(l)(e).
+
+**Pista** És possible que et trobis amb la necessitat d'escriure per
+sortida estàndard però sense fer un salt de línia. Si és així, considera
+el següent codi:
+
+.. code-block:: console
+
+    >>> if (True):
+    ...     print("Hola ", end='')      # sense separador de un print al següent
+    ...     print("i", end=' ')         # amb un espai com a separador
+    ...     print("adéu")               # separador estàndard; salt de línia
+    ... 
+    Hola i adéu
+    >>> if (True):
+    ...     print("Hola", end=' i ')    # separador " i "
+    ...     print("adéu")
+    ... 
+    Hola i adéu
+

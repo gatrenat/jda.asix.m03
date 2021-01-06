@@ -1,0 +1,158 @@
+####################
+Recorreguts numèrics
+####################
+
+Acabem de veure que ``for`` és una manera molt còmoda d'expressar
+recorreguts numèrics: problemes en els que hem d'anar passant per una
+seqüència de números.
+
+La forma general que farem servir de moment és:
+
+.. code-block:: python
+
+    for variable in range(inici, limit, increment):
+        processa_variable
+
+Per tant, tot recorregut ha de tenir clar els següents elements:
+
+* quin és el valor inicial
+
+* quin és el valor límit
+
+* quin és l'increment o pas d'un valor al següent
+
+Per exemple, recuperem el nostre conegut recorregut dels 10 primers
+naturals:
+
+.. code-block:: python
+
+    for valor in range(0, 10, 1):
+        print(valor)
+
+Una manera fàcil de llegir un recorregut com aquest seria: 
+
+    Escriu tots els números des del 0, agafant-los d'un en un, mentre
+    siguin menors de 10
+
+Una altra manera és imaginar-se que ``range()`` ens està oferint la
+seqüència de valors entre el 0 i el 9, i que ``for`` es limita a anar
+assignant un a un els diferents valors a la variable de recorregut.
+
+.. code-block:: python
+
+    valor = 0
+    print(valor)
+    valor = 1
+    print(valor)
+    valor = 2
+    print(valor)
+    # …
+    valor = 9
+    print(valor)
+
+
+Ens podem trobar dues opcions: quan el recorregut és *creixent* i quan és
+*decreixent*.
+
+Recorreguts creixents
+=====================
+
+Els recorreguts creixents es caracteritzen perquè ``inici <= limit`` 
+
+.. graphviz::
+    :align: center
+
+    digraph {
+        rankdir="LR";
+            infneg [label="-∞", shape=none] ;
+            infpos[label="+∞", shape=none];
+            inici, limit [ shape=none];
+            infneg -> inici;
+            inici -> limit;
+            limit  -> infpos;
+    }
+
+L'increment, en aquests casos, ha de ser un valor enter més gran que 0.
+
+En format ``while`` el bucle seria:
+
+.. code-block:: python
+
+    variable = inici
+    while variable < limit:
+        processa_variable
+        variable = variable + increment
+
+En format ``for`` en canvi:
+
+.. code-block:: python
+
+    for variable in range(inici, limit, increment):
+        processa_variable
+
+.. important:
+
+Una font típica de confusió al començament d'usar el bucle ``for`` de
+Python és tenir clar que el valor límit **no** es processa.
+
+
+Quan ``inici >= limit`` no entra mai a executar les instruccions del bloc
+en cap de les dues versions. Quants valors hi ha entre el 10 i el 1,
+començant pel 10 i anant pujant?
+
+Recorreguts decreixents
+=======================
+
+Els recorreguts decreixents es caracteritzen perquè ``limit <= inici`` 
+
+
+.. graphviz::
+    :align: center
+
+    digraph {
+        rankdir="RL";
+            infneg [label="-∞", shape=none] ;
+            infpos[label="+∞", shape=none];
+            inici, limit [ shape=none];
+            infpos -> inici;
+            inici -> limit;
+            limit  -> infneg;
+    }
+
+El decrement ha de ser un valor positiu.
+
+Aquests bucles tenen la forma següent:
+
+En format ``while``:
+
+.. code-block:: python
+
+    variable = inici
+    while variable > limit:
+        processa_variable
+        variable = variable - decrement
+
+En format ``for``:
+
+.. code-block:: python
+
+    for variable in range(inici, limit, -decrement):
+        processa_variable
+
+
+Practiquem
+==========
+
+Uns quants exercicis per practicar el que acabem de veure:
+
+|exerciseicon__T| :doc:`exercici_04_04_deu_primers_invertits_for`
+
+|exerciseicon__T| :doc:`exercici_04_05_primers_parells_fins_el_10_for`
+
+|exerciseicon__T| :doc:`exercici_04_06_enters_de_principi_a_fi_for`
+
+|exerciseicon__T| :doc:`exercici_04_07_suma_nombres`
+
+|exerciseicon__T| :doc:`exercici_04_08_mostra_interval`
+
+|exerciseicon__T| :doc:`exercici_04_09_historic_edats`

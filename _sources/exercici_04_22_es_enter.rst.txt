@@ -1,0 +1,56 @@
+##########################################
+|exerciseicon__T| Exercici 04_22. És enter
+##########################################
+
+.. rubric:: Context
+
+* Carpeta de lliurament: ``04_22_es_enter/``
+
+* Continguts relacionats: :doc:`recorreguts_strings`
+
+* Com lliurar-lo: :ref:`instruccions <instruccions_git>`
+
+* [✓] Exercici amb :ref:`autoavaluació<descripcio_exercicis_autoavaluacio>`
+
+.. rubric:: Enunciat
+
+Desenvolupa un programa que vagi demanant texts fins rebre la cadena
+buida.
+
+Per cada text no buit que rebi, indicarà si correspon o no a un nombre
+enter escrit amb dígits.
+
+Cal tenir en comptes que:
+
+* cal ignorar espais extra a l'inici i al final del text
+
+* cal acceptar que el nombre comenci per ``+`` o per ``-``
+
+Considera les següents simulacions:
+
+.. code-block:: console
+    :emphasize-lines: 2, 4, 6, 8, 10, 12, 14
+
+    $ python3 esenter.py
+    Introdueix texts (enter sol per finalitzar)
+    123
+    És enter
+               321
+    És enter
+    -4
+    És enter
+    +5
+    És enter
+    cinc
+    No és enter
+
+    Adéu
+
+
+**Pista**: Considera la següent demostració de l'ús de la utilitat
+``strip()``:
+
+.. code-block:: console
+
+    >>> "   hola i adéu   ".strip()
+    'hola i adéu'
