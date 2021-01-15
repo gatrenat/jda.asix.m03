@@ -6,7 +6,7 @@
 
 * Carpeta de lliurament: ``04_17_analisi_caracter/``
 
-* Continguts relacionats: :doc:`recorreguts_strings`
+* Continguts relacionats: :doc:`strings`
 
 * Com lliurar-lo: :ref:`instruccions <instruccions_git>`
 

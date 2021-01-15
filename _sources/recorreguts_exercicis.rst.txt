@@ -5,18 +5,36 @@ Llista d'exercicis
 Aquesta és la llista d'exercicis del tema de :doc:`recorreguts
 <recorreguts>` és:
 
+Encara amb el ``while``
+=======================
+
 .. toctree::
     :titlesonly:
 
     exercici_04_01_deu_primers_invertits.rst
     exercici_04_02_primers_parells_fins_el_10.rst
     exercici_04_03_enters_de_principi_a_fi.rst
+
+Recorreguts numèrics
+====================
+
+.. toctree::
+    :titlesonly:
+
     exercici_04_04_deu_primers_invertits_for.rst
     exercici_04_05_primers_parells_fins_el_10_for.rst
     exercici_04_06_enters_de_principi_a_fi_for.rst
     exercici_04_07_suma_nombres.rst
     exercici_04_08_mostra_interval.rst
     exercici_04_09_historic_edats.rst
+
+
+Revisió dels Strings
+====================
+
+.. toctree::
+    :titlesonly:
+
     exercici_04_10_inicial_vocal_minuscula.rst
     exercici_04_11_acaba_vocal_minuscula.rst
     exercici_04_12_acaba_lletra.rst
@@ -25,6 +43,14 @@ Aquesta és la llista d'exercicis del tema de :doc:`recorreguts
     exercici_04_15_matricula_italiana.rst
     exercici_04_16_matricula_valida_ampliada.rst
     exercici_04_17_analisi_caracter.rst
+
+
+Recorreguts en Strings
+======================
+
+.. toctree::
+    :titlesonly:
+
     exercici_04_18_parentitza.rst
     exercici_04_19_nomes_lletres.rst
     exercici_04_20_mostra_interval_string.rst

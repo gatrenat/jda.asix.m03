@@ -34,5 +34,6 @@ Els continguts que treballarem es troben dividits en els següents punts:
     recorreguts_while.rst
     recorreguts_for.rst
     recorreguts_numerics.rst
+    strings.rst
     recorreguts_strings.rst
     recorreguts_exercicis.rst

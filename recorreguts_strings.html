@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Strings &mdash; Introducció a la Programació per SysAdmins 2020-21 documentació</title>
+  <title>Recorreguts en Strings &mdash; Introducció a la Programació per SysAdmins 2020-21 documentació</title>
   
 
   
@@ -40,7 +40,7 @@
     <link rel="index" title="Índex" href="genindex.html" />
     <link rel="search" title="Cerca" href="search.html" />
     <link rel="next" title="Llista d’exercicis" href="recorreguts_exercicis.html" />
-    <link rel="prev" title="Recorreguts numèrics" href="recorreguts_numerics.html" />
+    <link rel="prev" title="Strings" href="strings.html" />
      
     <script class="googleanalytics" src="_static/moiscripts.js"></script>
 
@@ -97,7 +97,8 @@
 <li class="toctree-l2"><a class="reference internal" href="recorreguts_while.html">Recorreguts amb el <code class="docutils literal notranslate"><span class="pre">while</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="recorreguts_for.html">Un nou tipus de bucle</a></li>
 <li class="toctree-l2"><a class="reference internal" href="recorreguts_numerics.html">Recorreguts numèrics</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="strings.html">Strings</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Recorreguts en Strings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="recorreguts_exercicis.html">Llista d’exercicis</a></li>
 </ul>
 </li>
@@ -150,7 +151,7 @@
         
           <li><a href="recorreguts.html">Recorreguts</a> &raquo;</li>
         
-      <li>Strings</li>
+      <li>Recorreguts en Strings</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -168,92 +169,8 @@
     
            <div itemprop="articleBody">
             
-  <div class="section" id="strings">
-<h1>Strings<a class="headerlink" href="#strings" title="Link permanent a aquest títol">¶</a></h1>
-<p>Fins ara, els strings els hem tractat de manera atòmica; és a dir, com un
-valor indivisible. Per exemple, els hem llegit, escrit, comparat o
-assignat en bloc.</p>
-<p>Considera la següent assignació:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">nom</span> <span class="o">=</span> <span class="s2">&quot;Ritchie&quot;</span>
-</pre></div>
-</div>
-<p>El resultat d’executar-ho serà un espai de memòria al que ens podrem
-referir amb el nom de variable <code class="docutils literal notranslate"><span class="pre">nom</span> <span class="pre">``</span> <span class="pre">que</span> <span class="pre">contindrà</span> <span class="pre">les</span> <span class="pre">set</span> <span class="pre">lletres</span>
-<span class="pre">``R</span></code>, <code class="docutils literal notranslate"><span class="pre">i</span></code>, <code class="docutils literal notranslate"><span class="pre">t</span></code>, <code class="docutils literal notranslate"><span class="pre">c</span></code>, <code class="docutils literal notranslate"><span class="pre">h</span></code>, <code class="docutils literal notranslate"><span class="pre">i</span></code> i <code class="docutils literal notranslate"><span class="pre">e</span></code>.</p>
-<p>Podem imaginar que <code class="docutils literal notranslate"><span class="pre">nom</span></code> fa referència a una estructura com la que
-descriu el següent diagrama:</p>
-<img alt="_images/string_ritchie.png" class="align-center" src="_images/string_ritchie.png" />
-<p>Hem de tenir en compte, però, que els <em>strings</em> són bàsicament seqüències o
-cadenes de caràcters, i que cada caràcter en Python és també un string.</p>
-<p>Podria tenir sentit accedir també de manera individual als elements d’un string?</p>
-<p>Doncs bé, d’això va aquest nou tema.</p>
-<p>Considera la següent interacció a la consola Python</p>
-<div class="highlight-none notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16</pre></div></td><td class="code"><div class="highlight"><pre><span></span>&gt;&gt;&gt; text = &quot;Ameba&quot;                      # declarem i inicialitzem un String
-&gt;&gt;&gt; primeraLletra = text[0]             # obtenim el primer caràcter
-&gt;&gt;&gt; primeraLletra
-&#39;A&#39;
-&gt;&gt;&gt; text[1]                             # obtenim el segon caràcter
-&#39;m&#39;
-&gt;&gt;&gt; len(text)                           # obtenim la longitud del String
-5
-&gt;&gt;&gt; text[len(text)]                     # intentem aconseguir un caràcter fora de rang
-Traceback (most recent call last):
-  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
-IndexError: string index out of range
-&gt;&gt;&gt; text[len(text)-1]                   # obtenim el darrer caràcter del String
-&#39;a&#39;
-&gt;&gt;&gt; text[-1]                            # una altra manera d&#39;obtenir el darrer caràcter
-&#39;a&#39;
-</pre></div>
-</td></tr></table></div>
-<p>Fixa’t com podem accedir a cada caràcter amb <code class="docutils literal notranslate"><span class="pre">text[posicio]</span></code>.
-Les
-posicions comencen pel número 0 i, per tant, la darrera posició correspon
-al nombre de caràcters que conté la cadena <em>menys un</em>.</p>
-<p>Podem saber quants caràcters té un String amb la utilitat <code class="docutils literal notranslate"><span class="pre">len(text)</span></code>.
-Donat que és una seqüència, el nom de la utilitat retorna la <em>longitud</em>.</p>
-<p>Finalment, si ens passem de posició i demanem una fora de
-rang, ens trobarem amb un error que indica clarament que ens hem anat fora
-de la cadena.</p>
-<div class="section" id="juguem-una-mica">
-<h2>Juguem una mica<a class="headerlink" href="#juguem-una-mica" title="Link permanent a aquest títol">¶</a></h2>
-<p>En els següents exercicis treballarem l’accés a diferents lletres d’un
-String. Se t’oferiran noves funcions de Python que podràs fer servir en
-successius exercicis, a menys que explícitament t’indiquin el contrari.</p>
-<p>Recorda: tot i que hi ha moltes funcions que ens ofereix Python que ens
-podrien simplificar els nostres codis, el nostre objectiu no és tant
-resoldre els problemes si no aprendre a programar. És a dir, fes servir
-<strong>només</strong> el que et vagin oferint aquests continguts.</p>
-<p>Et recomano que ampliïs les teves anotacions del <a class="reference internal" href="exercici_00_03_resum_comandes.html"><span class="doc">resum de comandes</span></a> amb les funcions que et vagi presentant.
-En cas que trobis d’altres, és important
-que les marquis com a <strong>no permeses</strong> en els exercicis base ni a les
-proves d’aquest curs.</p>
-<p><img alt="exerciseicon__T" src="_images/exerciseicon__T.png" /> <a class="reference internal" href="exercici_04_10_inicial_vocal_minuscula.html"><span class="doc"> Exercici 04_10. Inicia amb vocal minúscula</span></a></p>
-<p><img alt="exerciseicon__T" src="_images/exerciseicon__T.png" /> <a class="reference internal" href="exercici_04_11_acaba_vocal_minuscula.html"><span class="doc"> Exercici 04_11. Acaba amb vocal minúscula</span></a></p>
-<p><img alt="exerciseicon__T" src="_images/exerciseicon__T.png" /> <a class="reference internal" href="exercici_04_12_acaba_lletra.html"><span class="doc"> Exercici 04_12. Acaba amb una lletra</span></a></p>
-<p><img alt="exerciseicon__T" src="_images/exerciseicon__T.png" /> <a class="reference internal" href="exercici_04_13_segona_igual_penultima.html"><span class="doc"> Exercici 04_13. La segona lletra és igual a la penúltima</span></a></p>
-<p><img alt="exerciseicon__T" src="_images/exerciseicon__T.png" /> <a class="reference internal" href="exercici_04_14_funcions_caracters.html"><span class="doc"> Exercici 04_14. Utilitats de caràcters</span></a></p>
-<p><img alt="exerciseicon__T" src="_images/exerciseicon__T.png" /> <a class="reference internal" href="exercici_04_15_matricula_italiana.html"><span class="doc"> Exercici 04_15. Matrícules italianes</span></a></p>
-<p><img alt="exerciseiconOS_" src="_images/exerciseiconOS_.png" /> <a class="reference internal" href="exercici_04_16_matricula_valida_ampliada.html"><span class="doc"> Exercici 04_16. Matrícules italianes (ampliació)</span></a></p>
-<p><img alt="exerciseicon__T" src="_images/exerciseicon__T.png" /> <a class="reference internal" href="exercici_04_17_analisi_caracter.html"><span class="doc"> Exercici 04_17. Analísis d’un caràcter a un String</span></a></p>
-</div>
-<div class="section" id="recorreguts-en-strings">
-<h2>Recorreguts en Strings<a class="headerlink" href="#recorreguts-en-strings" title="Link permanent a aquest títol">¶</a></h2>
+  <div class="section" id="recorreguts-en-strings">
+<h1>Recorreguts en Strings<a class="headerlink" href="#recorreguts-en-strings" title="Link permanent a aquest títol">¶</a></h1>
 <p>Tal i com acabem de veure, és possible accedir als diferents
 caràcters que composen un String a partir de la seva posició dins la
 cadena.</p>
@@ -339,7 +256,6 @@ numèrics ho podem aplicar a recorreguts amb Strings! Doncs sí, això mateix.</
 <p><img alt="exerciseicon__T" src="_images/exerciseicon__T.png" /> <a class="reference internal" href="exercici_04_21_cadena_continua.html"><span class="doc"> Exercici 04_21. Cadena continua</span></a></p>
 <p><img alt="exerciseicon__T" src="_images/exerciseicon__T.png" /> <a class="reference internal" href="exercici_04_22_es_enter.html"><span class="doc"> Exercici 04_22. És enter</span></a></p>
 </div>
-</div>
 
 
            </div>
@@ -375,7 +291,7 @@ numèrics ho podem aplicar a recorreguts amb Strings! Doncs sí, això mateix.</
         <a href="recorreguts_exercicis.html" class="btn btn-neutral float-right" title="Llista d’exercicis" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="recorreguts_numerics.html" class="btn btn-neutral float-left" title="Recorreguts numèrics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="strings.html" class="btn btn-neutral float-left" title="Strings" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
