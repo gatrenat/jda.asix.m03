@@ -15,7 +15,7 @@
 .. rubric:: Enunciat
 
 Fem una nova versió de l'exercici dels :doc:`deu primers naturals
-invertits <exercici_04_02_primers_parells_fins_el_10>`, aquest cop amb el bucle ``for``.
+invertits <exercici_04_01_deu_primers_invertits>`, aquest cop amb el bucle ``for``.
 
 És molt recomanable, si no ho has fet, que facis l'exercici original,
 doncs la resposta a totes aquestes preguntes ja les tindràs.

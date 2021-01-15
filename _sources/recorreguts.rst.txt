@@ -8,8 +8,8 @@ determinada condició.
 
 Considera el següent problema:
 
-    Desenvolupa un programa que escrigui els primers 10 números naturals. És
-    a dir: 1 2 3…10
+    Desenvolupa un programa que escrigui els primers 10 números naturals
+    (començant pel zero). És a dir: 0 1 2 3…9
 
 Intenta resoldre el problema anterior abans de continuar llegint, doncs
 aviat et mostraré una solució, de fet, més d'una.
@@ -18,7 +18,7 @@ Aquest tipus de problemes es pot resoldre de manera similar a altres
 problemes que hem realitzat fins ara. Ens caldrà una variable
 *acumuladora* que vagi comptant o *recorrent* els diferents valors des del
 primer (en aquest cas ``1``) dins d'un bucle, fins arribar al darrer (aquí
-``10``). La condició de finalització del bucle és doncs que la *variable
+``9``). La condició de finalització del bucle és doncs que la *variable
 de recorregut* hagi arribat al darrer valor a mostrar.
 
 Aquest tipus de problemes de recorreguts són molt típics. Tant, que molts
