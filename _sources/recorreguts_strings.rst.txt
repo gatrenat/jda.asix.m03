@@ -108,3 +108,5 @@ Apa, a practicar!
 |exerciseicon__T| :doc:`exercici_04_21_cadena_continua`
 
 |exerciseicon__T| :doc:`exercici_04_22_es_enter`
+
+|exerciseicon__T| :doc:`exercici_04_23_nomes_nombres`

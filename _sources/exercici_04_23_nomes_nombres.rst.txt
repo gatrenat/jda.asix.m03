@@ -1,0 +1,62 @@
+###################################################
+|exerciseicon__T| Exercici 04_23. Només els nombres
+###################################################
+
+.. rubric:: Context
+
+* Carpeta de lliurament: ``04_23_nomes_nombres/``
+
+* Continguts relacionats: :doc:`recorreguts_strings`
+
+* Com lliurar-lo: :ref:`instruccions <instruccions_git>`
+
+* [✓] Exercici amb :ref:`autoavaluació<descripcio_exercicis_autoavaluacio>`
+
+.. rubric:: Enunciat
+
+Desenvolupa un programa molt similar al que comprovava si l'entrada era
+o no :doc:`entera <exercici_04_22_es_enter>`. En aquesta ocasió, però, el
+que farà serà retornar el valor numèric que pugui extreure d'un string
+donat sense tenir en comptes ni tant sols els signes.
+
+
+Considera les següents simulacions:
+
+.. code-block:: console
+    :emphasize-lines: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32
+
+    $ python3 nomesenters.py
+    Introdueix texts (enter sol per finalitzar)
+    123
+    123
+               321
+    321
+    00123
+    123
+    -4
+    4
+    +5
+    5
+    cinc
+    0
+    1 i 2 són 3
+    123
+    1 + 2 = 3
+    123
+    +1 - 2 * 3
+    123
+    -     1     2      3
+    123
+       -1     2      3
+    123
+    +39-666.444.300
+    39666444300
+    0039-666.444.300
+    39666444300
+    192.168.1.223
+    1921681223
+
+    Adéu
+
+Fixa't que el valor que mostra finalment és la representació entera del
+nombre, sense zeros inicials i que no fa cas del signes ``-`` ni ``+``.

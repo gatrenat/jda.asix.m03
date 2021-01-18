@@ -56,3 +56,4 @@ Recorreguts en Strings
     exercici_04_20_mostra_interval_string.rst
     exercici_04_21_cadena_continua.rst
     exercici_04_22_es_enter.rst
+    exercici_04_23_nomes_nombres.rst
