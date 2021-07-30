@@ -12,3 +12,16 @@
     border: 1px solid black;
 }
 
+div.admonition.exercise p.admonition-title {
+    background-color: lightblue;
+    color: darkblue;
+}
+div.admonition.exercise.optional p.admonition-title:before{
+    content: "☼";
+}
+div.admonition.exercise.stared p.admonition-title:before{
+    content: "☆";
+}
+div.admonition.exercise.blackstared p.admonition-title:before{
+    content: "★";
+}
